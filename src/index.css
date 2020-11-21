@@ -25,19 +25,12 @@ body {
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul {
 	padding: 0;
+	list-style: none;
 }
 
 button {
 	font: inherit;
-}
-
-.Dropdown {
-	background: white;
-	border: 1px solid grey;
-	border-radius: 3px;
-	width: 100%;
-	max-width: 100%;
+	font-size: 2rem;
 }
