@@ -1,19 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         hej
-        </p>
-      </header>
-    <div>page</div>
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <div>
+        <h1>Hello dropdown</h1>
+      </div>
+    )
+  }
 }
 
 export default App;
