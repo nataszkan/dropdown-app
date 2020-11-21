@@ -3,17 +3,19 @@ import React, { useState } from 'react'
 
 export default function Dropdown( { action, items = [] }) {
   const [open, setOpen] = useState(false);
-  const [selection, setSelection ] = useState([]);
   const toggle = () => setOpen(!open);
   
-  function handleOnClick(item) {}
+  function handleOnClick(item) {
+    
+  }
+  
   return (
     <div>
         <button 
         tabIndex={0} 
         onKeyPress={()=> toggle(!open)} 
         onClick={() => toggle(!open)}>
-          {open ? 'Close menu' : 'Open menu'}
+          {open ? 'close menu' : 'open menu'}
         </button>
         {open && (
             <ul>
