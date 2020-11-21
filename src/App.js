@@ -1,44 +1,27 @@
 import React, { Component } from 'react'
+import Dropdown from './components/Dropdown';
+
+  const items = [
+  {
+    id: 1,
+    action: 'edit', 
+  },
+    {
+    id: 2,
+    action: 'share', 
+  },
+    {
+    id: 3,
+    action: 'delete', 
+  },
+]
 
 class App extends Component {
-  constructor() {
-    super();
-    
-    this.state= {
-      showMenu: false,
-    }
-    
-    this.showMenu = this.showMenu.bind(this);
-  }
-  
-  showMenu(event){
-    event.preventDefault();
-    
-    this.setState({
-      showMenu: true,
-    });
-  }
-  
+
   render () {
     return (
       <div>
-        <div>
-          <button onClick={this.showMenu}>show menu</button>
-        </div>
-        
-        {
-          this.state.showMenu
-          ? (
-            <ul>
-              <li><button>edit</button></li>
-              <li><button>share</button></li>
-              <li><button>delete</button></li>
-            </ul>
-          )
-          : (
-            null
-          )
-        }
+        <Dropdown title="Select action" items={items} />
       </div>
     )
   }
