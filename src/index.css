@@ -6,8 +6,8 @@ html {
 
 /* Box sizing rules */
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
@@ -21,6 +21,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont,
 		Helvetica Neue, Helvetica, Arial, sans-serif;
+	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 /* Remove default padding */
@@ -38,50 +39,58 @@ button {
 	cursor: pointer;
 }
 
-.menu-trigger {
+.dropdown-toggle-button {
 	border: 0;
 	border-radius: 4px;
 	color: #ffffff;
-	background: #4676d7;
+	background: #196cff;
 	padding: 8px 16px;
 	font-size: 2rem;
-}
-
-.menu-trigger:hover .menu-trigger:focus {
-	color: #9555af;
-	border-color: currentColor;
-	background-color: white;
+	text-transform: capitalize;
 }
 
 .page {
 	width: 100%;
 	max-width: 1360px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 100px;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .card {
-	width: 100%;
-	max-width: 1024px;
-	border: 1px solid #404040;
-	border-radius: 3px;
-	margin: 0 auto;
-	margin: 2px 0;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	border-radius: 4px;
+	width: 600px;
+	height: 600px;
+	background: #ffffff;
 }
 
-.menu {
+.dropdown-menu {
 	background: #ffffff;
 	border-radius: 4px;
 	position: absolute;
-	width: 300px;
 	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
 
-.menu li {
-	padding: 8px 16px;
+.dropdown-menu li {
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+
+.card-actions {
+	background: #ffffff;
+	display: flex;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+	flex-direction: row-reverse;
+}
+
+.card-content {
+	width: 100%;
+	max-width: 100%;
+	height: 600px;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
 }

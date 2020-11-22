@@ -8,26 +8,11 @@ import Dropdown from './components/Dropdown';
   },
     {
     id: 2,
-    action: 'share', 
+    action: 'save', 
   },
     {
     id: 3,
     action: 'delete', 
-  },
-]
-
-  const actions2 = [
-  {
-    id: 1,
-    action: 'settings', 
-  },
-    {
-    id: 2,
-    action: 'account', 
-  },
-    {
-    id: 3,
-    action: 'help', 
   },
 ]
 
@@ -38,7 +23,12 @@ class App extends Component {
       <>
         <div className="page">
           <div className="card">
-          <Dropdown title="Select action" items={actions1} />
+            <div className="card-content">
+                {/* <img alt="random photograph from online tool" src="https://picsum.photos/600" /> */}
+            </div>
+            <div className="card-actions">
+               <Dropdown title="Select action" items={actions1} />
+            </div>
           </div>
         </div>
       </>
