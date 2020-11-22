@@ -16,7 +16,6 @@ body {
 	font-size: 2rem;
 	line-height: 1.5;
 	color: #404040;
-	background: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont,
@@ -93,6 +92,7 @@ button {
 	border-radius: 4px;
 	position: absolute;
 	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 }
 
 .dropdown-menu li {
@@ -103,6 +103,7 @@ button {
 
 .dropdown-menu li:hover {
 	background: #f7f7f7;
+	border-radius: 4px;
 }
 
 .card-actions {
