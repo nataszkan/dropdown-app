@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Dropdown from './components/Dropdown';
 
-  const items = [
+  const actions1 = [
   {
     id: 1,
     action: 'edit', 
@@ -16,13 +16,33 @@ import Dropdown from './components/Dropdown';
   },
 ]
 
+  const actions2 = [
+  {
+    id: 1,
+    action: 'settings', 
+  },
+    {
+    id: 2,
+    action: 'account', 
+  },
+    {
+    id: 3,
+    action: 'help', 
+  },
+]
+
 class App extends Component {
 
   render () {
     return (
-      <div>
-        <Dropdown title="Select action" items={items} />
-      </div>
+      <>
+        <div>
+          <Dropdown title="Select action" items={actions1} />
+        </div>
+        <div>
+          <Dropdown title="Select action" items={actions2} />
+        </div>
+      </>
     )
   }
 }
