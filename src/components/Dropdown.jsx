@@ -26,14 +26,13 @@ export default function Dropdown( { action, items = [] }) {
           tabIndex={0}
           onKeyPress={() => toggle(!open)}
           onClick={() => toggle(!open)}>
-          {open ? 'close menu' : 'open menu'}
-          
+          <span>{open ? 'close tools' : 'open tools'}</span>
         </button>
         {open && (
           <ul className="dropdown-menu">
             {items.map(item => (
               <li key={item.id}>
-                <button type="button" onClick={() => handleOnClick(item)}>{action}
+                <button className="card-action-button" type="button" onClick={() => handleOnClick(item)}>{action}
                   <span>{item.action}</span></button>
               </li>
             ))}

@@ -8,7 +8,7 @@ import Dropdown from './components/Dropdown';
   },
     {
     id: 2,
-    action: 'save', 
+    action: 'share', 
   },
     {
     id: 3,
@@ -24,7 +24,6 @@ class App extends Component {
         <div className="page">
           <div className="card">
             <div className="card-content">
-                {/* <img alt="random photograph from online tool" src="https://picsum.photos/600" /> */}
             </div>
             <div className="card-actions">
                <Dropdown title="Select action" items={actions1} />
