@@ -46,6 +46,7 @@ button {
 	background: #196cff;
 	padding: 8px 16px;
 	font-size: 2rem;
+	font-weight: bold;
 	text-transform: capitalize;
 	min-width: 135px;
 }
