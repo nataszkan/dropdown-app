@@ -26,7 +26,7 @@ export default function Dropdown( { action, items = [] }) {
           tabIndex={0}
           onKeyPress={() => toggle(!open)}
           onClick={() => toggle(!open)}>
-          <span>{open ? 'close tools' : 'open tools'}</span>
+          <span>controls</span>
         </button>
         {open && (
           <ul className="dropdown-menu">
