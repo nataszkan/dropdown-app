@@ -36,11 +36,10 @@ class App extends Component {
   render () {
     return (
       <>
-        <div>
+        <div className="page">
+          <div className="card">
           <Dropdown title="Select action" items={actions1} />
-        </div>
-        <div>
-          <Dropdown title="Select action" items={actions2} />
+          </div>
         </div>
       </>
     )

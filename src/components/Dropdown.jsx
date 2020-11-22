@@ -23,13 +23,15 @@ export default function Dropdown( { action, items = [] }) {
     return (
       <div ref={dropdownRef}>
         <button
+          className="menu-trigger"
           tabIndex={0}
           onKeyPress={() => toggle(!open)}
           onClick={() => toggle(!open)}>
           {open ? 'close menu' : 'open menu'}
+          
         </button>
         {open && (
-          <ul >
+          <ul className="menu">
             {items.map(item => (
               <li key={item.id}>
                 <button type="button" onClick={() => handleOnClick(item)}>{action}
