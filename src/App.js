@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Dropdown from './components/Dropdown';
+import Page from './components/Page';
 import Card from './components/Card';
+import Dropdown from './components/Dropdown';
 
   const actions1 = [
   {
@@ -22,11 +23,11 @@ class App extends Component {
   render () {
     return (
       <>
-        <div className="page">
+        <Page>
            <Card>
                <Dropdown title="Select action" items={actions1} />
            </Card>
-        </div>
+        </Page>
        
       </>
     )
