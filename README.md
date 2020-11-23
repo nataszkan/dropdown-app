@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Next steps...if there was more time
+
+For next steps I would like to divide the dropdown build out of several components to make it more scalable and reusable.
+I would like to break out the
+
+Components/ \
+
+/Card\
+/Dropdown\
+/Page\
+/Button\
+/DropdownToggleButton\
+/CardActionButton\
+/CardActionMenu
+
+To be their own components within the components directory and imported into App.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
 
